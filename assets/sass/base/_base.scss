@@ -1,0 +1,31 @@
+html {
+  //not belong to typography because it defines  rem
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-transform: uppercase;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+}
