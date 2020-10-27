@@ -1,142 +1,306 @@
+@media only screen and (max-width: 767.98px) {
+  .text-center-md {
+    text-align: center;
+  }
+}
+
+.background-primary {
+  background-color: rgba(220, 94, 215, 0.3);
+}
+
+.background-secondary {
+  background-color: rgba(115, 155, 129, 0.3);
+}
+
+.background-tertiary {
+  background-color: rgba(248, 156, 28, 0.3);
+}
+
+.txt-primary {
+  color: rgba(220, 94, 215, 0.3);
+}
+
+.txt-secondary {
+  color: rgba(115, 155, 129, 0.3);
+}
+
+.txt-tertiary {
+  color: rgba(248, 156, 28, 0.3);
+}
+
+.txt-primary-dark {
+  color: #bf58a8;
+}
+
+.txt-secondary-dark {
+  color: #4da973;
+}
+
+.txt-tertiary-dark {
+  color: #f89c1c;
+}
+
+.ptb-100 {
+  padding: 10rem 0;
+}
+
+.ptb-50 {
+  padding: 5rem 0;
+}
+
+.pt-50 {
+  padding-top: 5rem;
+}
+
+@font-face {
+  font-family: Herman;
+  src: url(../fonts/Hurme.ttf);
+}
+@font-face {
+  font-family: HermanSemiBold;
+  src: url(../fonts/HurmeSmBd.ttf);
+}
+@font-face {
+  font-family: HermanBold;
+  src: url(../fonts/HurmeBold.ttf);
+}
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 767.98px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 1199.98px) {
+  html {
+    font-size: 75%;
+  }
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-body {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 1.6rem;
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+  font-family: Herman;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
+body {
+  box-sizing: border-box;
+  font-family: Herman;
+  font-weight: 400;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
 body h1,
 body h2,
 body h3,
-body h4 {
-  text-transform: uppercase;
+body h4,
+body h5,
+body h6 {
+  font-family: Herman;
+  font-weight: 600;
 }
-
-body a {
-  display: inline-block;
+body a,
+body a:hover {
+  color: #000;
   text-decoration: none;
-  color: black;
 }
-
+body h1 {
+  font-size: 3.5rem;
+}
+body p {
+  color: #4b4848;
+  font-size: 1.6rem;
+}
 body ul {
   list-style: none;
 }
-
 body li {
   display: inline-block;
 }
 
-.btn {
-  text-transform: uppercase;
-  padding: 1rem 2rem;
+.button {
+  font-family: HermanBold;
+  padding: 0.5rem 1rem;
   display: inline-block;
-  border-radius: 10rem;
-  -webkit-transition: all 0.2s;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  border: 1px solid transparent;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
-  background-color: blue;
+  font-size: 1.6rem;
+}
+.button__primary {
+  background-color: #dc5ed7;
+}
+.button__primary--txtwht {
+  color: #fff;
+}
+.button__primary--light {
+  background-color: rgba(220, 94, 215, 0.3);
+  color: #dc5ed7;
+}
+.button__dark, .button__dark:hover {
+  background-color: #000;
+  color: #fff;
+}
+.button__gradient {
+  background: linear-gradient(270deg, #dc5ed7 0%, #ffa7fc 100%);
+  color: #fff;
 }
 
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
+.product-card {
+  position: relative;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  padding-right: 3rem;
+}
+.product-card h2 {
+  font-size: 2.8rem;
+}
+.product-card .txt {
+  font-size: 1.3rem;
+  display: block;
+}
+.product-card .price {
+  color: #bf58a8;
+}
+.product-card .pic {
+  position: absolute;
+  top: -4rem;
+  transform: scale(1.3);
+  right: -7rem;
+}
+@media only screen and (max-width: 575.98px) {
+  .product-card {
+    min-width: 30rem;
+  }
+  .product-card .pic {
+    transform: scale(1);
+    right: -8rem;
+  }
 }
 
-.row:not(:last-child) {
-  margin-bottom: 8rem;
+.accordion-single:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.accordion-single__header button {
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+.accordion-single__header button span {
+  font-family: Herman;
+  font-weight: 600;
+}
+.accordion-single__header button em {
+  background-color: #f5f5f5;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion-single__header button em img {
+  transform: scale(0.9) rotate(180deg);
+}
+.accordion-single__header button.collapsed {
+  background-color: #f5f5f5;
+}
+.accordion-single__header button.collapsed img {
+  transform: scale(0.9) rotate(0deg);
 }
 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+.footer {
+  background: url(../img/background.png);
+  background-size: 100%;
+}
+.footer__form {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.footer__form input {
+  border: none;
+}
+@media only screen and (max-width: 767.98px) {
+  .footer p,
+.footer li {
+    text-align: center;
+  }
 }
 
-.row [class^="col-"] {
-  float: left;
-}
-
-.row [class^="col-"]:not(:last-child) {
-  margin-right: 8rem;
-}
-
-.row .col-1-of-2 {
-  width: calc((100% - 8rem) / 2);
-}
-
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 8rem) / 3);
-}
-
-.row .col-2-of-3 {
-  width: calc(((100% - 2 * 8rem) / 3) * 2 + 8rem);
-}
-
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 8rem) / 4);
-}
-
-.row .col-2-of-4 {
-  width: calc(((100% - 3 * 8rem) / 4) * 2 + 8rem);
-}
-
-.row .col-3-of-4 {
-  width: calc(((100% - 3 * 8rem) / 4) * 3 + 2 * 8rem);
-}
-
-.header {
-  background-color: lightgray;
-  height: 100vh;
+nav {
+  font-family: HermanBold;
+  padding: 0px 5rem !important;
   position: relative;
 }
-
-.btn,
-.navbar {
-  text-transform: uppercase;
+nav a {
+  font-weight: 600;
+  color: #000;
 }
-
-.navbar {
-  display: block;
-  height: 8rem;
-  width: 100%;
-  top: 0px;
-  position: fixed;
-  z-index: 1;
+nav a:hover {
+  color: rgba(0, 0, 0, 0.7);
 }
-
-.navbar .logo {
-  width: 10rem;
-  height: auto;
-  position: absolute;
-  left: 10rem;
-  top: 2rem;
+nav #cart {
+  position: relative;
 }
-
-.navbar .navlist {
-  position: absolute;
-  right: 10rem;
-  top: 2rem;
+@media only screen and (max-width: 991.98px) {
+  nav ul {
+    height: 80vh;
+    z-index: 50;
+  }
+  nav ul li {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  nav #cart {
+    position: absolute;
+    top: 3.5rem;
+    right: 10rem;
+  }
 }
-
-.navbar .navlist li {
-  margin-right: 2rem;
-  padding: 1rem;
+@media only screen and (max-width: 575.98px) {
+  nav #cart {
+    top: 4.5rem;
+    right: 10rem;
+  }
 }
 
 .hero-section {
-  width: 100vw;
-  position: absolute;
-  top: 10rem;
+  min-height: 80vh;
+}
+.hero-section .container {
+  height: 100%;
+}
+.hero-section .container h1 {
+  font-size: 6rem;
+}
+.hero-section .container h1 span {
+  font-family: Herman;
+  font-weight: 400;
+}
+.hero-section .container p {
+  font-size: 2.4rem;
+}
+
+.section-header p {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

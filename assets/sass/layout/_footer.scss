@@ -1,0 +1,18 @@
+.footer {
+  background: url(../img/background.png);
+  background-size: cover;
+  &__form {
+    background-color: $color-white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    input {
+      border: none;
+    }
+  }
+  @include respond(md) {
+    p,
+    li {
+      text-align: center;
+    }
+  }
+}

@@ -1,7 +1,22 @@
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 575.98px) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == md {
+    @media only screen and (max-width: 767.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media only screen and (max-width: 991.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media only screen and (min-width: 1199.98px) {
+      @content;
+    }
   }
 }

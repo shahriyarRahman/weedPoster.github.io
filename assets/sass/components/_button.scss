@@ -1,11 +1,34 @@
-.btn {
-  text-transform: uppercase;
-  padding: 1rem 2rem;
+.button {
+  font-family: HermanBold;
+  padding: 0.5rem 1rem;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  border: 1px solid transparent;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
-  background-color: blue;
+  font-size: 1.6rem;
+  //   color: $color-black;
+  &__primary {
+    background-color: $color-primary;
+    &--txtwht {
+      color: $color-white;
+    }
+    &--light {
+      background-color: rgba($color-primary, 0.3);
+      color: $color-primary;
+    }
+  }
+
+  &__dark,
+  &__dark:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+  &__gradient {
+    background: linear-gradient(270deg, #dc5ed7 0%, #ffa7fc 100%);
+    color: $color-white;
+  }
 }

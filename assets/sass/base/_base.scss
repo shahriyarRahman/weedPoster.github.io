@@ -1,26 +1,68 @@
-html {
-  //not belong to typography because it defines  rem
-  font-size: 62.5%;
+@font-face {
+  font-family: Herman;
+  src: url(../fonts/Hurme.ttf);
 }
+@font-face {
+  font-family: HermanSemiBold;
+  src: url(../fonts/HurmeSmBd.ttf);
+}
+@font-face {
+  font-family: HermanBold;
+  src: url(../fonts/HurmeBold.ttf);
+}
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
+  @include respond(md) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(sm) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+  @include respond(xl) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: inherit;
 }
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+  font-family: Herman;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 body {
   box-sizing: border-box;
+  font-family: Herman;
+  font-weight: 400;
   font-size: 1.6rem;
+  overflow-x: hidden;
   h1,
   h2,
   h3,
-  h4 {
-    text-transform: uppercase;
+  h4,
+  h5,
+  h6 {
+    font-family: Herman;
+    font-weight: 600;
   }
-  a {
-    display: inline-block;
+  a,
+  a:hover {
+    color: $color-black;
     text-decoration: none;
-    color: black;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  p {
+    color: #4b4848;
+    font-size: 1.6rem;
   }
   ul {
     list-style: none;

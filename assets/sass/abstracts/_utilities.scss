@@ -1,0 +1,41 @@
+.text-center-md {
+  @include respond(md) {
+    text-align: center;
+  }
+}
+.background-primary {
+  background-color: $color-primary-light;
+}
+.background-secondary {
+  background-color: $color-secondary-light;
+}
+.background-tertiary {
+  background-color: $color-tertiary-light;
+}
+.txt-primary {
+  color: $color-primary-light;
+}
+.txt-secondary {
+  color: $color-secondary-light;
+}
+.txt-tertiary {
+  color: $color-tertiary-light;
+}
+.txt-primary-dark {
+  color: $color-primary-dark;
+}
+.txt-secondary-dark {
+  color: $color-secondary-dark;
+}
+.txt-tertiary-dark {
+  color: $color-tertiary-dark;
+}
+.ptb-100 {
+  padding: 10rem 0;
+}
+.ptb-50 {
+  padding: 5rem 0;
+}
+.pt-50 {
+  padding-top: 5rem;
+}

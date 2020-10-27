@@ -1,0 +1,34 @@
+.accordion-single {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &__header {
+    button {
+      outline: none;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      span {
+        font-family: Herman;
+        font-weight: 600;
+      }
+      em {
+        background-color: $color-gray;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          transform: scale(0.9) rotate(180deg);
+        }
+      }
+      &.collapsed {
+        background-color: $color-gray;
+        img {
+          transform: scale(0.9) rotate(0deg);
+        }
+      }
+    }
+  }
+}

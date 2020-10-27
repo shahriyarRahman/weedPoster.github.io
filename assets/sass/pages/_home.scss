@@ -1,0 +1,23 @@
+.hero-section {
+  min-height: 80vh;
+  .container {
+    height: 100%;
+
+    h1 {
+      font-size: 6rem;
+
+      span {
+        font-family: Herman;
+        font-weight: 400;
+      }
+    }
+    p {
+      font-size: 2.4rem;
+    }
+  }
+}
+.section-header {
+  p {
+    font-size: 2rem;
+  }
+}

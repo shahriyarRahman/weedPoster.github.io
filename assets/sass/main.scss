@@ -1,13 +1,14 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/utilities";
 
 @import "base/base";
 
 @import "components/button";
+@import "components/product-card";
+@import "components/accordion";
 @import "components/social-icons";
 
-@import "layout/flex-box";
-@import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
