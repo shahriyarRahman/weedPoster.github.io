@@ -46,22 +46,21 @@
   transition: all 0.5s;
 }
 .owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
+  width: 1.4rem;
+  height: 1.4rem;
   margin: 5px 7px;
   background: #d6d6d6;
   display: block;
   -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 30px;
+  transition: all 0.2s;
 }
 .owl-theme .owl-dots .owl-dot.active span {
   background: #dc5ed7;
   width: 5rem;
   border-radius: 8rem;
   height: 1.4rem;
-  margin: 0;
-  margin-top: -1.7rem;
 }
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #dc5ed7;

@@ -1,14 +1,32 @@
 @font-face {
-  font-family: Herman;
-  src: url(../fonts/Hurme.ttf);
+  font-family: "Herman";
+  src: url("../fonts/HurmeGeometricSans3\ Light.otf"); /* IE9 Compat Modes */
+  font-weight: 200;
 }
 @font-face {
-  font-family: HermanSemiBold;
-  src: url(../fonts/HurmeSmBd.ttf);
+  font-family: "Herman";
+  src: url("../fonts/HurmeGeometricSans3\ Thin.otf"); /* IE9 Compat Modes */
+  font-weight: 300;
 }
 @font-face {
-  font-family: HermanBold;
-  src: url(../fonts/HurmeBold.ttf);
+  font-family: "Herman";
+  src: url("../fonts/HurmeGeometricSans3.otf"); /* IE9 Compat Modes */
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Herman";
+  src: url("../fonts/HurmeGeometricSans3\ SemiBold.otf"); /* IE9 Compat Modes */
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Herman";
+  src: url("../fonts/HurmeGeometricSans3\ Bold.otf"); /* IE9 Compat Modes */
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Herman";
+  src: url("../fonts/HurmeGeometricSans3\ Black.otf"); /* IE9 Compat Modes */
+  font-weight: 800;
 }
 html {
   // This defines what 1rem is
@@ -33,13 +51,13 @@ html {
 ::-webkit-input-placeholder,
 :-ms-input-placeholder,
 ::placeholder {
-  font-family: Herman;
+  font-family: "Herman";
   text-transform: uppercase;
   font-weight: 600;
 }
 body {
   box-sizing: border-box;
-  font-family: Herman;
+  font-family: "Herman";
   font-weight: 400;
   font-size: 1.6rem;
   overflow-x: hidden;

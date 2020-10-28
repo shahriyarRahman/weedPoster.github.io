@@ -1,8 +1,10 @@
 .button {
-  font-family: HermanBold;
-  padding: 0.5rem 1rem;
+  font-family: "Herman";
+  font-weight: 600;
+  padding: 0.5rem 2rem;
   display: inline-block;
   border-radius: 0.8rem;
+  text-transform: capitalize;
   background-color: transparent;
   border: 1px solid transparent;
   -webkit-transition: all 0.2s;

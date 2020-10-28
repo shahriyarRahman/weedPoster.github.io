@@ -1,9 +1,8 @@
 
 $('.owl-carousel').owlCarousel({
     loop: false,
+    autoWidth: true,
     margin: 150,
-    stagePadding: 60,
-    URLhashListener: true,
     dots: true,
     dotsEach: true,
     responsiveClass: true,
@@ -16,7 +15,18 @@ $('.owl-carousel').owlCarousel({
         },
         1000: {
             items: 3
+        },
+        1400: {
+            items: 4
         }
     }
 })
 
+$(document).ready(function () {
+    $('.toggle-botton').on('click', () => {
+        $(".collapsable").addClass("show");
+    })
+    $('.cross-botton').on('click', () => {
+        $(".collapsable").removeClass("show");
+    })
+});

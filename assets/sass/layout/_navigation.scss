@@ -1,9 +1,21 @@
 nav {
-  font-family: HermanBold;
+  font-family: "Herman";
   padding: 0px 5rem !important;
   position: relative;
+  #toggler {
+    // display: none;
+  }
+  .toggle-botton,
+  .cross-botton {
+    width: 30px;
+    display: none;
+  }
+  .collapsable {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
   a {
-    // font-family: HermanBold;
     font-weight: 600;
     color: $color-black;
     &:hover {
@@ -15,13 +27,56 @@ nav {
     position: relative;
   }
   @include respond(lg) {
-    ul {
-      height: 80vh;
-      z-index: 50;
-      li {
-        display: block;
-        text-align: center;
-        padding: 1rem 0;
+    .cross-botton {
+      width: 50px;
+      height: 50px;
+      display: block;
+      position: absolute;
+      right: 5rem;
+      top: 3rem;
+      background: $color-gray;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 20px;
+      }
+    }
+    .toggle-botton {
+      width: 30px;
+      display: block;
+      position: absolute;
+      right: 5rem;
+    }
+    .collapsable {
+      height: 100vh;
+      z-index: 57;
+      width: 100vw;
+      position: fixed;
+      background: #fff;
+      top: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      right: 0;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+      &.show {
+        transform: translateX(0);
+      }
+      ul {
+        li {
+          display: block;
+          text-align: center;
+          padding: 1rem 0;
+        }
+      }
+      .nav-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
       }
     }
     #cart {

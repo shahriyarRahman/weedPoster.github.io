@@ -9,7 +9,13 @@
       border: none;
     }
   }
+
   @include respond(md) {
+    .lower-footer {
+      [class*="col-"] {
+        margin-top: 3rem;
+      }
+    }
     p,
     li {
       text-align: center;

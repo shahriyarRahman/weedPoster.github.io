@@ -12,6 +12,9 @@
 .background-tertiary {
   background-color: $color-tertiary-light;
 }
+.txt-primary-light {
+  color: $color-primary-light-2;
+}
 .txt-primary {
   color: $color-primary-light;
 }
@@ -38,4 +41,7 @@
 }
 .pt-50 {
   padding-top: 5rem;
+}
+.pb-100 {
+  padding-bottom: 10rem;
 }
