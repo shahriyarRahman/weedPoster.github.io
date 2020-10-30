@@ -71,3 +71,9 @@
     padding: 12rem 0 6rem 0 !important;
   }
 }
+@media (min-width: 1600px) {
+  .owl-carousel {
+    margin: auto;
+    max-width: 1200px;
+  }
+}

@@ -4,34 +4,46 @@
   }
 }
 .background-primary {
-  background-color: $color-primary-light;
+  background-color: $color-primary-light !important;
+}
+.background-primary-solid {
+  background-color: $color-primary !important;
+}
+.background-primary-light {
+  background-color: $color-primary-light-1 !important;
 }
 .background-secondary {
-  background-color: $color-secondary-light;
+  background-color: $color-secondary-light !important;
 }
 .background-tertiary {
-  background-color: $color-tertiary-light;
+  background-color: $color-tertiary-light !important;
 }
 .txt-primary-light {
-  color: $color-primary-light-2;
+  color: $color-primary-light-2 !important;
 }
 .txt-primary {
-  color: $color-primary-light;
+  color: $color-primary-light !important;
+}
+.txt-primary-solid {
+  color: $color-primary !important;
 }
 .txt-secondary {
-  color: $color-secondary-light;
+  color: $color-secondary-light !important;
 }
 .txt-tertiary {
-  color: $color-tertiary-light;
+  color: $color-tertiary-light !important;
 }
 .txt-primary-dark {
-  color: $color-primary-dark;
+  color: $color-primary-dark !important;
 }
 .txt-secondary-dark {
-  color: $color-secondary-dark;
+  color: $color-secondary-dark !important;
 }
 .txt-tertiary-dark {
-  color: $color-tertiary-dark;
+  color: $color-tertiary-dark !important;
+}
+.txt-muted {
+  color: $color-gray-2 !important;
 }
 .ptb-100 {
   padding: 10rem 0;

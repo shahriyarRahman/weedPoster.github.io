@@ -1,6 +1,6 @@
 nav {
   font-family: "Herman";
-  padding: 0px 5rem !important;
+  padding: 0px 5rem;
   position: relative;
   #toggler {
     // display: none;
@@ -25,8 +25,18 @@ nav {
 
   #cart {
     position: relative;
+    span {
+      font-weight: 400;
+      font-size: 1rem;
+      padding: 0rem 1rem;
+      position: absolute;
+      border-radius: 1rem;
+      top: -1rem;
+      right: -2.2rem;
+    }
   }
   @include respond(lg) {
+    padding: 0px 3rem;
     .cross-botton {
       width: 50px;
       height: 50px;
@@ -47,7 +57,7 @@ nav {
       width: 30px;
       display: block;
       position: absolute;
-      right: 5rem;
+      right: 3rem;
     }
     .collapsable {
       height: 100vh;

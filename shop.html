@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  
+  
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="d-flex bg-transparent align-items-center">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.svg" alt="logo" />
+      </a>
+      <label class="toggle-botton" for="toggler">
+        <img src="assets/img/menu-toggle.svg" alt="" class="img-fluid" />
+      </label>
+      <div class="collapsable ml-auto" id="navbarNavDropdown">
+        <label class="cross-botton" for="toggler">
+          <img src="assets/img/cancel.svg" alt="" class="img-fluid" />
+        </label>
+        <ul class=" ">
+          <li class="mx-md-4">
+            <a class="" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="mx-md-4">
+            <a class="" href="#">Shop</a>
+          </li>
+          <li class="mx-md-4">
+            <a class="" href="#">How to Order</a>
+          </li>
+          <li class="mx-md-4">
+            <a href="" class="button button__primary ">My Account</a>
+          </li>
+          <li class="mx-md-4">
+            <a href="" class="button button__dark">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <a href="" id="cart" class="ml-md-4">
+        <span class="background-primary-solid text-light">15</span>
+        <img src="assets/img/cart.svg" alt="cart" />
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section class="shop-header pt-50">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5">
+            <h1>Shop Weed</h1>
+            <p>From the Comfort of your Home</p>
+            <form action="" class="shop-header__form row d-flex justify-content-between align-items-center">
+              <label class="col-1"><img src="assets/img/search-primary.svg" alt="" /></label>
+              <input class="col-11" type="text" placeholder="Search Product" />
+            </form>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/img/sofa.svg" alt="" class="img-fluid shop-header__floatImg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shop-area ptb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 shop-sidebar">
+            <h2>Categories</h2>
+            <ul>
+              <li class="active"><a href="">All</a></li>
+              <li><a href="">AAA</a></li>
+              <li><a href="">AAAA</a></li>
+              <li><a href="">AAAAA</a></li>
+              <li><a href="">Edibles</a></li>
+              <li><a href="">Hybrid</a></li>
+              <li><a href="">Indica</a></li>
+              <li><a href="">Mix n Match</a></li>
+              <li><a href="">New Drops</a></li>
+            </ul>
+            <h2>Filter by</h2>
+            <ul>
+              <li>
+                <h3>price</h3>
+              </li>
+              <li class="col-10 py-3"><div id="slider-range"></div>
+              </li>
+              <li>
+                 <input type="text" name="" id="slider-input-1" class="col-3" value="0">
+                 <input type="text" name="" id="slider-input-2" class="col-3" value="100000">
+                 
+                <button class="button button__primary--light txt-primary-solid" onclick="setRange()">Apply</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 ">
+            <div class="row d-flex justify-content-between align-items-center">
+              <h2>Sort by: A-Z <img src="assets/img/arrow-down.svg" alt=""></h2>
+              <h4 class="txt-muted">Showing 1-9 of 45 results</h4>
+            </div>
+            <div class="row shop-main">
+              <div class="col-md-4">
+                <div class="shop-card item background-primary">
+                  <span class="badge background-primary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Pink Star</h2>
+                  <p class="txt-primary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-secondary">
+                  <span class="badge background-secondary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Black Mamba</h2>
+                  <p class="txt-secondary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-tertiary">
+                  <span class="badge background-tertiary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Georgia Pie</h2>
+                  <p class="txt-tertiary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+         
+              <div class="col-md-4">
+                <div class="shop-card item background-tertiary">
+                  <span class="badge background-tertiary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Georgia Pie</h2>
+                  <p class="txt-tertiary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-primary">
+                  <span class="badge background-primary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Pink Star</h2>
+                  <p class="txt-primary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-primary">
+                  <span class="badge background-primary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Pink Star</h2>
+                  <p class="txt-primary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-secondary">
+                  <span class="badge background-secondary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Black Mamba</h2>
+                  <p class="txt-secondary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-tertiary">
+                  <span class="badge background-tertiary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Georgia Pie</h2>
+                  <p class="txt-tertiary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+         
+              <div class="col-md-4">
+                <div class="shop-card item background-secondary">
+                  <span class="badge background-secondary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Black Mamba</h2>
+                  <p class="txt-secondary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-primary">
+                  <span class="badge background-primary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Pink Star</h2>
+                  <p class="txt-primary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-secondary">
+                  <span class="badge background-secondary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Black Mamba</h2>
+                  <p class="txt-secondary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shop-card item background-tertiary">
+                  <span class="badge background-tertiary">AAAA</span>
+                  <img src="assets/img/nug 1.svg" alt="" class="pic" />
+           
+                  <h2 class="">Georgia Pie</h2>
+                  <p class="txt-tertiary-dark"><strong>$12.50 - $650.00</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button button-block  button___outline"> View More</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="ptb-50 footer">
+    <div class="container">
+      <div class="row text-center justify-content-center mb-3">
+        <div class="col-md-5 section-header">
+          <h1>Stay in the Loop</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="row no-gutters justify-content-center">
+        <form action="" class="footer__form col-md-6 d-flex justify-content-between">
+          <input type="email" placeholder="Your Email Address" class="col-8" />
+          <button type="button" class="button button__gradient col-3">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid mt-5 pt-sm-5">
+      <div class="row text-left justify-content-between no-gutters lower-footer">
+        <div class="col-md-3 d-flex justify-content-center align-items-center">
+          <img src="assets/img/logo.svg" alt="" />
+          <div class="ml-2">
+            <p><strong>Weed</strong>Posters</p>
+            <p>All rights reserved</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <p><strong>Navigation</strong></p>
+          <ul class="d-flex justify-content-between">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>How to Order</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="col-md-1 d-flex justify-content-center align-items-center">
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <a><img src="assets/img/reddit.svg" alt="reddit icon" class="img-fluid mr-3" /></a>
+            </li>
+            <li>
+              <a><img src="assets/img/insta.svg" alt="insta icon" class="img-fluid" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery-3.5.1.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $( "#slider-range" ).slider({
+  range: true,
+  min: 0,
+  max: 100000,
+	values: [ 0, 100000]
+});
+function setRange(){
+
+  var range1 =  $('#slider-input-1').val();
+  var range2 =  $('#slider-input-2').val();
+  $( "#slider-range" ).slider( "option", "values", [ range1, range2 ] );
+range1 = 0;
+range2 = 0;
+}
+  </script>
+</body>
+
+</html>

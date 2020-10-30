@@ -5,8 +5,9 @@
 @import "base/base";
 
 @import "components/button";
-@import "components/product-card";
+@import "components/feature-card";
 @import "components/accordion";
+@import "components/shop-card";
 @import "components/social-icons";
 
 @import "layout/header";
@@ -14,3 +15,4 @@
 @import "layout/navigation";
 
 @import "pages/home";
+@import "pages/shop";

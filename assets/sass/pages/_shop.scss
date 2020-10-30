@@ -1,0 +1,46 @@
+.shop {
+  &-header {
+    margin: 5rem;
+    background-color: $color-primary-light-1;
+    border-radius: 5rem;
+    padding: 0 5rem;
+
+    &__floatImg {
+      transform: translateY(3rem);
+    }
+    &__form {
+      background-color: $color-primary-light;
+      border-radius: 0.8rem;
+      overflow: hidden;
+      height: 4rem;
+      input {
+        border: none;
+        height: 100%;
+        background-color: transparent;
+      }
+    }
+  }
+  &-sidebar {
+    ul {
+      margin: 4rem 0;
+      li {
+        margin: 1rem 0;
+        font-weight: 600;
+        .button {
+          font-size: 1.2rem;
+        }
+        a {
+          color: $color-gray-2;
+        }
+        &.active {
+          a {
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+  &-main {
+    margin-top: 5rem;
+  }
+}

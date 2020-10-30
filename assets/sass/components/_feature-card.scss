@@ -1,4 +1,4 @@
-.product-card {
+.feature-card {
   position: relative;
   border-radius: 2rem;
   padding: 2.5rem;
@@ -17,13 +17,13 @@
   .pic {
     position: absolute;
     top: -2rem;
-    transform: scale(1.6);
-    right: -7rem;
+    transform: scale(1.4);
+    right: -8rem;
   }
   @include respond(sm) {
     .pic {
       transform: scale(1);
-      right: -8rem;
+      right: -9rem;
       top: -5rem;
     }
     margin-left: 1rem;
