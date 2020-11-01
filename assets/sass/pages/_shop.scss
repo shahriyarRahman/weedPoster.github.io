@@ -4,6 +4,7 @@
     background-color: $color-primary-light-1;
     border-radius: 5rem;
     padding: 0 5rem;
+    padding-top: 2rem;
 
     &__floatImg {
       transform: translateY(3rem);
@@ -36,6 +37,15 @@
           a {
             color: $color-black;
           }
+        }
+      }
+    }
+    @include respond(md) {
+      ul {
+        margin: 2rem 0;
+        li {
+          display: inline-block;
+          margin: 1rem;
         }
       }
     }

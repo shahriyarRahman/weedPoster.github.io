@@ -1,18 +1,29 @@
 .footer {
   background: url(../img/background.png);
   background-size: cover;
+  padding: 3.5rem;
+
+  @include respond(lg) {
+    padding: 4rem 2.4rem;
+  }
   &__form {
     background-color: $color-white;
     border-radius: 0.8rem;
     overflow: hidden;
+    padding: 0.5rem 1rem;
     input {
       border: none;
       height: 100%;
+      width: 75%;
     }
   }
 
   @include respond(md) {
     .lower-footer {
+      .footer-logo {
+        display: flex;
+        justify-content: center;
+      }
       [class*="col-"] {
         margin-top: 3rem;
       }

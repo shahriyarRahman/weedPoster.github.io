@@ -59,7 +59,7 @@ body {
   box-sizing: border-box;
   font-family: "Herman";
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   overflow-x: hidden;
   h1,
   h2,
@@ -93,5 +93,25 @@ body {
   span,
   textarea {
     outline: none;
+  }
+  input {
+    border-radius: 0.8rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+  }
+  @include respond(xl) {
+    section {
+      max-width: 1440px;
+      margin: auto;
+    }
+    main {
+      .container-fluid {
+        max-width: 1440px;
+      }
+    }
   }
 }

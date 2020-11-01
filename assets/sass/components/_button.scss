@@ -16,6 +16,9 @@
     width: 100%;
     padding: 1.5rem 2.5rem;
   }
+  &-lg {
+    padding: 1rem 3rem;
+  }
   &__primary {
     background-color: $color-primary;
     &--txtwht {

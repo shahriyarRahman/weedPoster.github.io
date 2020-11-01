@@ -2,9 +2,6 @@ nav {
   font-family: "Herman";
   padding: 0px 5rem;
   position: relative;
-  #toggler {
-    // display: none;
-  }
   .toggle-botton,
   .cross-botton {
     width: 30px;
@@ -23,7 +20,7 @@ nav {
     }
   }
 
-  #cart {
+  #cart-btn {
     position: relative;
     span {
       font-weight: 400;
@@ -62,14 +59,15 @@ nav {
     .collapsable {
       height: 100vh;
       z-index: 57;
-      width: 100vw;
+      width: 60vw;
       position: fixed;
       background: #fff;
       top: 0;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       right: 0;
+      padding-top: 20vh;
       transform: translateX(100%);
       transition: transform 0.5s ease-in-out;
       &.show {
@@ -89,14 +87,14 @@ nav {
         height: 100px;
       }
     }
-    #cart {
+    #cart-btn {
       position: absolute;
       top: 3.5rem;
       right: 10rem;
     }
   }
   @include respond(sm) {
-    #cart {
+    #cart-btn {
       top: 4.5rem;
       right: 10rem;
     }
