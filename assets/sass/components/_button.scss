@@ -29,11 +29,12 @@
       color: $color-primary;
     }
   }
-  &___outline {
+  &__outline {
     border: 1px solid $color-primary;
     color: $color-primary;
     background-color: transparent;
-    &:hover {
+    &:hover,
+    &:active {
       color: $color-white;
       background-color: $color-primary;
     }

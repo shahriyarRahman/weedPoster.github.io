@@ -13,7 +13,12 @@
     }
   }
   @include respond(md) {
-    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    .header-text {
+      margin-bottom: 3rem;
+    }
   }
 }
 .section-header {

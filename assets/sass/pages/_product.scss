@@ -1,0 +1,115 @@
+.product {
+  min-height: 100vh;
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &-slider {
+    height: 100vh;
+
+    .owl-carousel {
+      img {
+        height: 55vh;
+        margin: auto;
+      }
+    }
+    &.background-primary {
+      .owl-theme .owl-dots .owl-dot.active span {
+        background: $color-primary;
+      }
+      .owl-theme .owl-dots .owl-dot:hover span {
+        background: $color-primary;
+      }
+    }
+    &.background-secondary {
+      .owl-theme .owl-dots .owl-dot.active span {
+        background: $color-secondary;
+      }
+      .owl-theme .owl-dots .owl-dot:hover span {
+        background: $color-secondary;
+      }
+    }
+    &.background-tertiary {
+      .owl-theme .owl-dots .owl-dot.active span {
+        background: $color-tertiary;
+      }
+      .owl-theme .owl-dots .owl-dot:hover span {
+        background: $color-tertiary;
+      }
+    }
+  }
+  &-description {
+    background-color: $color-gray;
+    padding: 4rem;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 1.6rem;
+    h1 {
+      font-size: 3.5rem;
+    }
+    .badge {
+      font-weight: 400;
+      font-size: 1.4rem;
+      border-radius: 0.6rem;
+      padding: 0.5rem 1rem;
+    }
+    .button__outline {
+      border: 1px solid $color-black;
+      color: $color-black;
+      background-color: transparent;
+      font-size: 1.4rem;
+      margin: 0.5rem;
+      &:hover,
+      &:active,
+      &.active {
+        background-color: rgba($color-primary, 0.3);
+        color: $color-primary;
+        border: 1px solid rgba($color-primary, 0.1);
+      }
+    }
+    .button-block {
+      padding: 1rem 1.5rem;
+    }
+    .raffle {
+      display: flex;
+      align-items: center;
+      // h1 {
+      //   display: inline-block;
+      // }
+    }
+    .nav-item {
+      width: 33%;
+      text-align: center;
+      padding: 0.5rem 0;
+      .nav-link {
+        font-size: 1.4rem;
+        border-bottom: 2px solid $color-gray-2;
+        &.active {
+          background-color: #0000;
+          border-color: #0000;
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+    }
+    .poster-card {
+      font-size: 1.2rem;
+    }
+    .product-review {
+      .heading {
+        display: inline-block;
+      }
+      span {
+        font-size: 1rem;
+        border-radius: 1rem;
+        width: 4rem;
+        height: 1.7rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color-primary, 0.3);
+        color: $color-primary;
+      }
+    }
+  }
+}

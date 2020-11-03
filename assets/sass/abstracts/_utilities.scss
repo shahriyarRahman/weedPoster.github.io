@@ -15,6 +15,9 @@
 .background-secondary {
   background-color: $color-secondary-light !important;
 }
+.background-secondary-solid {
+  background-color: $color-secondary !important;
+}
 .background-tertiary {
   background-color: $color-tertiary-light !important;
 }
@@ -26,6 +29,9 @@
 }
 .txt-primary-solid {
   color: $color-primary !important;
+}
+.txt-secondary-solid {
+  color: $color-secondary !important;
 }
 .txt-secondary {
   color: $color-secondary-light !important;
