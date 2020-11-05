@@ -1,0 +1,106 @@
+.login {
+  height: 100vh;
+  &-card {
+    margin: auto;
+    background: url(../img/bg-darksvg.svg);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 2rem 4rem;
+    &-logo {
+      max-width: 6rem;
+    }
+  }
+}
+.account {
+  min-height: 100vh;
+  &-sidebar {
+    background-color: $color-gray;
+    min-height: 100vh;
+    @include respond(md) {
+      min-height: auto;
+    }
+    a {
+      font-weight: 600;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      border-left: 5px solid transparent;
+      transition: all 0.5s ease-in-out;
+      &:hover,
+      &.active {
+        border-left: 5px solid $color-primary;
+        background-color: rgba($color-primary-light, 0.1);
+      }
+      span {
+        width: 40px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    #acc-account-tab {
+      span {
+        background-image: url(../img/Category.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/Category-primary.svg);
+        }
+      }
+    }
+    #acc-verification-tab {
+      span {
+        background-image: url(../img/verification.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/verification-primary.svg);
+        }
+      }
+    }
+    #acc-billing-tab {
+      span {
+        background-image: url(../img/wallet.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/wallet-primary.svg);
+        }
+      }
+    }
+    #acc-shipping-tab {
+      span {
+        background-image: url(../img/shipping.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/shipping-primary.svg);
+        }
+      }
+    }
+  }
+  &-main {
+    min-height: 100vh;
+    .tab-pane {
+      margin-top: 13rem;
+      margin-left: 10rem;
+      font-size: 1.6rem;
+      h1 {
+        font-size: 3rem;
+      }
+      input,
+      select {
+        background-color: $color-gray;
+      }
+    }
+    &-document {
+      background-color: $color-gray;
+      height: 250px;
+    }
+  }
+}

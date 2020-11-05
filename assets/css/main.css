@@ -68,6 +68,10 @@
   color: #b9b9b9 !important;
 }
 
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
 .ptb-100 {
   padding: 10rem 0;
 }
@@ -204,11 +208,13 @@ body section ::-webkit-scrollbar-thumb {
 body section ::-webkit-scrollbar-thumb:hover {
   background: #b9b9b9;
 }
-body input {
+body input,
+body select {
   border-radius: 0.8rem;
   outline: none;
   border: none;
   padding: 1rem;
+  width: 100%;
 }
 body input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
@@ -238,7 +244,7 @@ body input[type=number]::-webkit-inner-spin-button {
 }
 .button-block {
   width: 100%;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 3rem;
 }
 .button-lg {
   padding: 1rem 3rem;
@@ -814,5 +820,94 @@ nav #cart-btn span {
   align-items: center;
   background-color: rgba(220, 94, 215, 0.3);
   color: #dc5ed7;
+}
+
+.login {
+  height: 100vh;
+}
+.login-card {
+  margin: auto;
+  background: url(../img/bg-darksvg.svg);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 2rem 4rem;
+}
+.login-card-logo {
+  max-width: 6rem;
+}
+
+.account {
+  min-height: 100vh;
+}
+.account-sidebar {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 767.98px) {
+  .account-sidebar {
+    min-height: auto;
+  }
+}
+.account-sidebar a {
+  font-weight: 600;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  border-left: 5px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.account-sidebar a:hover, .account-sidebar a.active {
+  border-left: 5px solid #dc5ed7;
+  background-color: rgba(220, 94, 215, 0.1);
+}
+.account-sidebar a span {
+  width: 40px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.account-sidebar #acc-account-tab span {
+  background-image: url(../img/Category.svg);
+}
+.account-sidebar #acc-account-tab:hover span, .account-sidebar #acc-account-tab.active span {
+  background-image: url(../img/Category-primary.svg);
+}
+.account-sidebar #acc-verification-tab span {
+  background-image: url(../img/verification.svg);
+}
+.account-sidebar #acc-verification-tab:hover span, .account-sidebar #acc-verification-tab.active span {
+  background-image: url(../img/verification-primary.svg);
+}
+.account-sidebar #acc-billing-tab span {
+  background-image: url(../img/wallet.svg);
+}
+.account-sidebar #acc-billing-tab:hover span, .account-sidebar #acc-billing-tab.active span {
+  background-image: url(../img/wallet-primary.svg);
+}
+.account-sidebar #acc-shipping-tab span {
+  background-image: url(../img/shipping.svg);
+}
+.account-sidebar #acc-shipping-tab:hover span, .account-sidebar #acc-shipping-tab.active span {
+  background-image: url(../img/shipping-primary.svg);
+}
+.account-main {
+  min-height: 100vh;
+}
+.account-main .tab-pane {
+  margin-top: 13rem;
+  margin-left: 10rem;
+  font-size: 1.6rem;
+}
+.account-main .tab-pane h1 {
+  font-size: 3rem;
+}
+.account-main .tab-pane input,
+.account-main .tab-pane select {
+  background-color: #f5f5f5;
+}
+.account-main-document {
+  background-color: #f5f5f5;
+  height: 250px;
 }
 /*# sourceMappingURL=main.css.map */
