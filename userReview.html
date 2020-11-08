@@ -23,56 +23,100 @@
             <img src="assets/img/logo.svg" alt="">
           </div>
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="active" id="acc-account-tab" data-toggle="pill" href="#acc-account" role="tab"
-              aria-controls="acc-account" aria-selected="true">
-              <span></span> Account
+            <a class="active" id="acc-overview-tab" data-toggle="pill" href="#acc-overview" role="tab"
+              aria-controls="acc-overview" aria-selected="true">
+              <span></span> Overview
             </a>
-            <a class="" id="acc-verification-tab" data-toggle="pill" href="#acc-verification" role="tab"
-              aria-controls="acc-verification" aria-selected="false">
-              <span></span> Verification
+            <a class="" id="acc-refHistory-tab" data-toggle="pill" href="#acc-refHistory" role="tab"
+              aria-controls="acc-refHistory" aria-selected="false">
+              <span></span> Referral History
             </a>
-            <a class="" id="acc-billing-tab" data-toggle="pill" href="#acc-billing" role="tab"
-              aria-controls="acc-billing" aria-selected="false">
-              <span></span> Billing
+            <a class="" id="acc-orderHistory-tab" data-toggle="pill" href="#acc-orderHistory" role="tab"
+              aria-controls="acc-orderHistory" aria-selected="false">
+              <span></span> Order History
             </a>
-            <a class="" id="acc-shipping-tab" data-toggle="pill" href="#acc-shipping" role="tab"
-              aria-controls="acc-shipping" aria-selected="false">
-              <span></span> Shipping
+            <hr>
+            <a class="" id="acc-settings-tab" data-toggle="pill" href="#acc-settings" role="tab"
+              aria-controls="acc-settings" aria-selected="false">
+              <span></span> Account Settings
             </a>
           </div>
         </div>
-        <div class="col-md-10 account-main">
+        <div class="col-md-10 user-main">
           <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="acc-account" role="tabpanel" aria-labelledby="acc-account-tab">
+            <div class="tab-pane fade show active" id="acc-overview" role="tabpanel" aria-labelledby="acc-overview-tab">
               <div class="container">
-                <div class="row">
-                  <div class="col-md-9">
-                    <h1>Create your account</h1>
-                    <p>Sign up with your email address and create a password. Your information is safe with us and will
-                      not be lost.
-                    </p>
-                    <div class="row mt-6">
-                      <div class="col-12">
-                        <form action="" class="row">
-                          <div class="mb-4 col-md-12">
-                            <input type="email" placeholder="First Name">
-                          </div>
-                          <div class="mb-4 col-md-12">
-                            <input type="password" placeholder="Last Name">
-                          </div>
-                        </form>
+                <div class="user-popup-card">
+                  <img src="assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-12 mb-5">
+                    <h1>Overview</h1>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="user-overview-card text-center">
+                      <img src="assets/img/overview.svg" alt="">
+                      <h2 class="mt-5">Referal Program </h2>
+                      <p class="px-md-5 mt-4">Refer a friend and get credit is automatically applied towards your next
+                        WeedPosters payment
+                      </p>
+                      <div class="col-md-9 row mt-5">
+                        <div class="col-10">
+                          <input class="background-primary-light txt-primary-solid" type="text"
+                            value="https:/weedposter.com/ref=ibra.." disabled>
+                        </div>
+                        <div class="col-2">
+                          <button class="button background-primary-light txt-primary-solid"><img
+                              src="assets/img/copy.svg" alt=""></button>
+                        </div>
                       </div>
-                      <div class="col-12 mt-6 d-flex justify-content-between">
-                        <a href=""><img src="assets/img/arrow-left.svg" alt=""><span class="ml-4">Previous
-                            Step</span></a>
-                        <button class="button button__primary">Get Started</button>
+                      <div class="card text-left mt-5">
+                        <p>Referal Points Balance</p>
+                        <h1>45 Points <span>/ 20$ cashback approx.</span></h1>
                       </div>
+                      <div class="mt-5">
+                        <h2>How Does it Work?</h2>
+                        <p class="mt-4">When you refer a friend you will now gain points each time your friend makes a
+                          purchase.
+                          Users receive 1% of total transactions that their referred parties spend. At checkout you will
+                          automatically be prompted if points would like to be applied.
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="user-card background-gray d-flex">
+                      <div class="d-flex align-items-center">
+                        <h1 class="mr-3">240</h1>
+                        <span>Completed Orders</span>
+                      </div>
+                      <div class="user-card-img background-skyblue">
+                        <img class="" src="assets/img/trolley.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="user-card background-gray d-flex mt-5">
+                      <div class="d-flex align-items-center">
+                        <h1 class="mr-3">300</h1>
+                        <span>Referred Friends</span>
+                      </div>
+                      <div class="user-card-img background-gold">
+                        <img class="" src="assets/img/Add User.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      <h1>Recent Orders</h1>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="acc-verification" role="tabpanel" aria-labelledby="acc-verification-tab">
+            <div class="tab-pane fade" id="acc-refHistory" role="tabpanel" aria-labelledby="acc-refHistory-tab">
               <div class="container">
                 <div class="row">
                   <div class="col-md-9 ">
@@ -105,7 +149,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="acc-billing" role="tabpanel" aria-labelledby="acc-billing-tab">
+            <div class="tab-pane fade" id="acc-orderHistory" role="tabpanel" aria-labelledby="acc-orderHistory-tab">
               <div class="container">
                 <div class="row">
                   <div class="col-md-9">
@@ -164,7 +208,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="acc-shipping" role="tabpanel" aria-labelledby="acc-shipping-tab">
+            <div class="tab-pane fade" id="acc-settings" role="tabpanel" aria-labelledby="acc-settings-tab">
               <div class="container">
                 <div class="row">
                   <div class="col-md-9">
@@ -228,6 +272,9 @@
       </div>
     </div>
   </main>
+  <div class="chat-message">
+    <img src="assets/img/message.svg" alt="">
+  </div>
   <script src="assets/js/jquery-3.5.1.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>

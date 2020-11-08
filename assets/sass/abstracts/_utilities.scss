@@ -3,6 +3,12 @@
     text-align: center;
   }
 }
+.background-gray {
+  background-color: $color-gray !important;
+}
+.background-white {
+  background-color: $color-white !important;
+}
 .background-primary {
   background-color: $color-primary-light !important;
 }
@@ -20,6 +26,18 @@
 }
 .background-tertiary {
   background-color: $color-tertiary-light !important;
+}
+.background-skyblue {
+  background-color: $color-skyblue-light !important;
+}
+.txt-skyblue {
+  background-color: $color-skyblue !important;
+}
+.background-gold {
+  background-color: $color-gold-light !important;
+}
+.txt-gold {
+  background-color: $color-gold !important;
 }
 .txt-primary-light {
   color: $color-primary-light-2 !important;

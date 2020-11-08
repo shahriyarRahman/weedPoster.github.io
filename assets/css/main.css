@@ -4,6 +4,14 @@
   }
 }
 
+.background-gray {
+  background-color: #f9f9f9 !important;
+}
+
+.background-white {
+  background-color: #fff !important;
+}
+
 .background-primary {
   background-color: rgba(220, 94, 215, 0.3) !important;
 }
@@ -26,6 +34,22 @@
 
 .background-tertiary {
   background-color: rgba(248, 156, 28, 0.3) !important;
+}
+
+.background-skyblue {
+  background-color: rgba(35, 220, 206, 0.3) !important;
+}
+
+.txt-skyblue {
+  background-color: #23dcce !important;
+}
+
+.background-gold {
+  background-color: rgba(255, 181, 39, 0.3) !important;
+}
+
+.txt-gold {
+  background-color: #ffb527 !important;
 }
 
 .txt-primary-light {
@@ -163,6 +187,7 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   overflow-x: hidden;
+  position: relative;
 }
 body h1,
 body h2,
@@ -218,6 +243,14 @@ body select {
 }
 body input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
+}
+body .chat-message {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+body [class*=card] {
+  border-radius: 0.8rem;
 }
 @media only screen and (min-width: 1600.98px) {
   body section {
@@ -324,7 +357,7 @@ body input[type=number]::-webkit-inner-spin-button {
   font-weight: 600;
 }
 .accordion-single__header button em {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -336,7 +369,7 @@ body input[type=number]::-webkit-inner-spin-button {
   transform: scale(0.9) rotate(180deg);
 }
 .accordion-single__header button.collapsed {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
 }
 .accordion-single__header button.collapsed img {
   transform: scale(0.9) rotate(0deg);
@@ -446,7 +479,7 @@ nav #cart-btn span {
     position: absolute;
     right: 5rem;
     top: 3rem;
-    background: #f5f5f5;
+    background: #f9f9f9;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -647,7 +680,7 @@ nav #cart-btn span {
   padding: 3rem 5rem;
 }
 .cart-sidebar {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   height: 100vh;
   margin-left: 3rem;
   padding: 3rem 4rem;
@@ -702,7 +735,7 @@ nav #cart-btn span {
     position: absolute;
     height: 5rem;
     width: 5rem;
-    background: #f5f5f5;
+    background: #f9f9f9;
     border-radius: 10rem;
     overflow: hidden;
     top: 2rem;
@@ -755,7 +788,7 @@ nav #cart-btn span {
   background: #f89c1c;
 }
 .product-description {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   padding: 4rem;
   height: 100vh;
   overflow-x: hidden;
@@ -840,7 +873,7 @@ nav #cart-btn span {
   min-height: 100vh;
 }
 .account-sidebar {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   min-height: 100vh;
 }
 @media only screen and (max-width: 767.98px) {
@@ -853,7 +886,7 @@ nav #cart-btn span {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   border-left: 5px solid transparent;
   transition: all 0.5s ease-in-out;
 }
@@ -867,10 +900,13 @@ nav #cart-btn span {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.account-sidebar #acc-account-tab span {
+.account-sidebar #acc-account-tab span,
+.account-sidebar #acc-overview-tab span {
   background-image: url(../img/Category.svg);
 }
-.account-sidebar #acc-account-tab:hover span, .account-sidebar #acc-account-tab.active span {
+.account-sidebar #acc-account-tab:hover span, .account-sidebar #acc-account-tab.active span,
+.account-sidebar #acc-overview-tab:hover span,
+.account-sidebar #acc-overview-tab.active span {
   background-image: url(../img/Category-primary.svg);
 }
 .account-sidebar #acc-verification-tab span {
@@ -891,6 +927,24 @@ nav #cart-btn span {
 .account-sidebar #acc-shipping-tab:hover span, .account-sidebar #acc-shipping-tab.active span {
   background-image: url(../img/shipping-primary.svg);
 }
+.account-sidebar #acc-refHistory-tab span {
+  background-image: url(../img/ticket.svg);
+}
+.account-sidebar #acc-refHistory-tab:hover span, .account-sidebar #acc-refHistory-tab.active span {
+  background-image: url(../img/ticket-primary.svg);
+}
+.account-sidebar #acc-orderHistory-tab span {
+  background-image: url(../img/order.svg);
+}
+.account-sidebar #acc-orderHistory-tab:hover span, .account-sidebar #acc-orderHistory-tab.active span {
+  background-image: url(../img/order-primary.svg);
+}
+.account-sidebar #acc-settings-tab span {
+  background-image: url(../img/setting.svg);
+}
+.account-sidebar #acc-settings-tab:hover span, .account-sidebar #acc-settings-tab.active span {
+  background-image: url(../img/setting-primary.svg);
+}
 .account-main {
   min-height: 100vh;
 }
@@ -899,15 +953,92 @@ nav #cart-btn span {
   margin-left: 10rem;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 767.98px) {
+  .account-main .tab-pane {
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+    margin-left: 0rem;
+    font-size: 1.4rem;
+  }
+}
 .account-main .tab-pane h1 {
   font-size: 3rem;
 }
 .account-main .tab-pane input,
 .account-main .tab-pane select {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
 }
 .account-main-document {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   height: 250px;
+}
+
+.user-main {
+  min-height: 100vh;
+  position: relative;
+}
+.user-main .tab-pane {
+  margin: 4rem;
+  margin-top: 6rem;
+}
+.user-main .card {
+  border: none;
+}
+.user-popup-card {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background-color: #000;
+  display: flex;
+  padding: 1rem;
+  min-width: 300px;
+  width: -webkit-max-content;
+  width: max-content;
+}
+.user-popup-card img {
+  border-radius: 0.8rem;
+  margin-right: 1.5rem;
+}
+.user-popup-card p {
+  color: #fff;
+  margin: 0;
+}
+.user-card {
+  display: flex;
+  flex-direction: inherit;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+.user-card h1 {
+  font-size: 4rem;
+}
+.user-card span {
+  font-size: 1.6rem;
+}
+.user-card-img {
+  padding: 2rem;
+  border-radius: 50% !important;
+}
+.user-overview-card {
+  background-color: #f9f9f9;
+  padding: 3rem 4rem;
+  border-radius: 1.2rem;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-overview-card input {
+  padding: 0.5rem 1rem;
+}
+.user-overview-card .card {
+  border: none;
+  padding: 1rem;
+}
+.user-overview-card .card span {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

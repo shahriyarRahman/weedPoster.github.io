@@ -61,6 +61,7 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   overflow-x: hidden;
+  position: relative;
   h1,
   h2,
   h3,
@@ -119,6 +120,14 @@ body {
   }
   input[type="number"]::-webkit-inner-spin-button {
     opacity: 1;
+  }
+  .chat-message {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  [class*="card"] {
+    border-radius: 0.8rem;
   }
   @include respond(xl) {
     section {
