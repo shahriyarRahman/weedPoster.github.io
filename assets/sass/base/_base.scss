@@ -125,9 +125,23 @@ body {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+    z-index: 200;
+    span {
+      background-color: $color-black;
+      color: $color-white;
+      padding: 0.3rem 0.8rem;
+      position: absolute;
+      top: -0.4rem;
+      font-size: 75%;
+      right: -0.5rem;
+      border-radius: 50%;
+    }
   }
   [class*="card"] {
     border-radius: 0.8rem;
+    @include respond(md) {
+      margin-top: 2.5rem;
+    }
   }
   @include respond(xl) {
     section {

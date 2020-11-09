@@ -148,9 +148,15 @@
   &-main {
     min-height: 100vh;
     position: relative;
+    hr.sp {
+      border-top: 2px solid #000;
+    }
     .tab-pane {
       margin: 4rem;
-      margin-top: 6rem;
+      margin-top: 8rem;
+      @include respond(md) {
+        margin-top: 15rem;
+      }
     }
     .card {
       border: none;
@@ -158,12 +164,13 @@
   }
   &-popup-card {
     position: absolute;
+    z-index: 100;
     right: 2rem;
     top: 2rem;
     background-color: $color-black;
     display: flex;
     padding: 1rem;
-    min-width: 300px;
+    min-width: 200px;
     width: max-content;
     img {
       border-radius: 0.8rem;
@@ -186,7 +193,7 @@
     span {
       font-size: 1.6rem;
     }
-    &-img {
+    .icon {
       padding: 2rem;
       border-radius: 50% !important;
     }
@@ -209,6 +216,41 @@
       span {
         font-size: 1.4rem;
         font-weight: 400;
+      }
+    }
+    @include respond(md) {
+      padding: 2rem;
+    }
+  }
+  &-settings {
+    margin-top: 3rem;
+    min-height: 100vh;
+    padding-bottom: 10rem;
+    padding: 1.5rem;
+    padding-bottom: 10rem;
+    @include respond(md) {
+      button {
+        margin-top: 2rem;
+      }
+    }
+    &-card {
+      position: relative;
+      img {
+        margin-right: 2rem;
+      }
+      &-edit-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50% !important;
+        background-color: $color-gray;
+        display: flex;
+        justify-content: center;
+        img {
+          margin: 0px;
+        }
       }
     }
   }

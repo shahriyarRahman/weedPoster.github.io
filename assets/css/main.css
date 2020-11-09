@@ -41,7 +41,7 @@
 }
 
 .txt-skyblue {
-  background-color: #23dcce !important;
+  color: #23dcce !important;
 }
 
 .background-gold {
@@ -49,7 +49,15 @@
 }
 
 .txt-gold {
-  background-color: #ffb527 !important;
+  color: #ffb527 !important;
+}
+
+.background-blue {
+  background-color: rgba(46, 95, 242, 0.3) !important;
+}
+
+.txt-blue {
+  color: #2e5ff2 !important;
 }
 
 .txt-primary-light {
@@ -97,19 +105,33 @@
 }
 
 .ptb-100 {
-  padding: 10rem 0;
+  padding: 10rem 0 !important;
 }
 
 .ptb-50 {
-  padding: 5rem 0;
+  padding: 5rem 0 !important;
 }
 
 .pt-50 {
-  padding-top: 5rem;
+  padding-top: 5rem !important;
 }
 
 .pb-100 {
-  padding-bottom: 10rem;
+  padding-bottom: 10rem !important;
+}
+
+.br-1 {
+  border-radius: 0.8rem !important;
+}
+
+.thumbnail {
+  width: 140px;
+}
+@media only screen and (max-width: 767.98px) {
+  .thumbnail {
+    display: block;
+    margin: auto;
+  }
 }
 
 @font-face {
@@ -248,9 +270,25 @@ body .chat-message {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  z-index: 200;
+}
+body .chat-message span {
+  background-color: #000;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  position: absolute;
+  top: -0.4rem;
+  font-size: 75%;
+  right: -0.5rem;
+  border-radius: 50%;
 }
 body [class*=card] {
   border-radius: 0.8rem;
+}
+@media only screen and (max-width: 767.98px) {
+  body [class*=card] {
+    margin-top: 2.5rem;
+  }
 }
 @media only screen and (min-width: 1600.98px) {
   body section {
@@ -397,6 +435,88 @@ body [class*=card] {
 .shop-card .pic {
   display: block;
   margin: 0 auto;
+}
+
+.table tr {
+  background-color: #f9f9f9;
+  font-weight: 600;
+  border-top: 1rem solid #fff;
+}
+.table tr:hover {
+  background-color: #fceffb;
+}
+.table tr .badge {
+  font-size: 100%;
+  font-weight: 600;
+}
+.table tr td,
+.table tr th {
+  border-top: none;
+}
+.table tr td:first-child,
+.table tr th:first-child {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.table tr td:last-child,
+.table tr th:last-child {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.table tr .sp-head {
+  display: flex;
+  align-items: center;
+}
+.table tr .sp-head-arrows {
+  margin-left: 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  height: 15px;
+  justify-content: space-between;
+}
+.table thead {
+  position: relative;
+}
+.table thead:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+.table thead th {
+  border-bottom: 2px solid #000;
+}
+.table thead tr {
+  background-color: #fff;
+}
+.table thead tr:hover {
+  background-color: #fff;
+}
+.table thead tr th {
+  color: #dc5ed7;
+}
+.table-reversed {
+  background-color: #f9f9f9;
+}
+.table-reversed tr {
+  background-color: #fff;
+  font-weight: 600;
+  border-top: 1rem solid #f9f9f9;
+}
+.table-reversed thead {
+  position: relative;
+}
+.table-reversed thead:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+.table-reversed thead tr {
+  background-color: #f9f9f9;
+}
+.table-reversed thead tr:hover {
+  background-color: #f9f9f9;
 }
 
 .footer {
@@ -977,21 +1097,30 @@ nav #cart-btn span {
   min-height: 100vh;
   position: relative;
 }
+.user-main hr.sp {
+  border-top: 2px solid #000;
+}
 .user-main .tab-pane {
   margin: 4rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .user-main .tab-pane {
+    margin-top: 15rem;
+  }
 }
 .user-main .card {
   border: none;
 }
 .user-popup-card {
   position: absolute;
+  z-index: 100;
   right: 2rem;
   top: 2rem;
   background-color: #000;
   display: flex;
   padding: 1rem;
-  min-width: 300px;
+  min-width: 200px;
   width: -webkit-max-content;
   width: max-content;
 }
@@ -1016,7 +1145,7 @@ nav #cart-btn span {
 .user-card span {
   font-size: 1.6rem;
 }
-.user-card-img {
+.user-card .icon {
   padding: 2rem;
   border-radius: 50% !important;
 }
@@ -1040,5 +1169,42 @@ nav #cart-btn span {
 .user-overview-card .card span {
   font-size: 1.4rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 767.98px) {
+  .user-overview-card {
+    padding: 2rem;
+  }
+}
+.user-settings {
+  margin-top: 3rem;
+  min-height: 100vh;
+  padding-bottom: 10rem;
+  padding: 1.5rem;
+  padding-bottom: 10rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .user-settings button {
+    margin-top: 2rem;
+  }
+}
+.user-settings-card {
+  position: relative;
+}
+.user-settings-card img {
+  margin-right: 2rem;
+}
+.user-settings-card-edit-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50% !important;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+.user-settings-card-edit-icon img {
+  margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */
