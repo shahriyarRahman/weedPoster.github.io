@@ -117,6 +117,61 @@
         }
       }
     }
+    #acc-users-tab {
+      span {
+        background-image: url(../img/users-group.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/users-group-primary.svg);
+        }
+      }
+    }
+    #acc-products-tab {
+      span {
+        background-image: url(../img/user.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/user-primary.svg);
+        }
+      }
+    }
+    #acc-collections-tab {
+      span {
+        background-image: url(../img/collections.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/collections-primary.svg);
+        }
+      }
+    }
+    #acc-discount-tab {
+      span {
+        background-image: url(../img/ticket-star.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/ticket-star-primary.svg);
+        }
+      }
+    }
+    #acc-strains-tab {
+      span {
+        background-image: url(../img/briefcase.svg);
+      }
+      &:hover,
+      &.active {
+        span {
+          background-image: url(../img/briefcase-primary.svg);
+        }
+      }
+    }
   }
   &-main {
     min-height: 100vh;
@@ -225,9 +280,11 @@
   &-settings {
     margin-top: 3rem;
     min-height: 100vh;
+    padding: 3rem;
     padding-bottom: 10rem;
-    padding: 1.5rem;
-    padding-bottom: 10rem;
+    h1 {
+      font-size: 3.5rem;
+    }
     @include respond(md) {
       button {
         margin-top: 2rem;
@@ -251,6 +308,12 @@
         img {
           margin: 0px;
         }
+      }
+    }
+    .view-order {
+      strong {
+        display: block;
+        margin-top: 1rem;
       }
     }
   }

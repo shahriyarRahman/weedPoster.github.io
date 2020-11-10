@@ -282,6 +282,10 @@ body .chat-message span {
   right: -0.5rem;
   border-radius: 50%;
 }
+body .badge-pill {
+  font-weight: 600;
+  font-size: 100%;
+}
 body [class*=card] {
   border-radius: 0.8rem;
 }
@@ -1065,6 +1069,36 @@ nav #cart-btn span {
 .account-sidebar #acc-settings-tab:hover span, .account-sidebar #acc-settings-tab.active span {
   background-image: url(../img/setting-primary.svg);
 }
+.account-sidebar #acc-users-tab span {
+  background-image: url(../img/users-group.svg);
+}
+.account-sidebar #acc-users-tab:hover span, .account-sidebar #acc-users-tab.active span {
+  background-image: url(../img/users-group-primary.svg);
+}
+.account-sidebar #acc-products-tab span {
+  background-image: url(../img/user.svg);
+}
+.account-sidebar #acc-products-tab:hover span, .account-sidebar #acc-products-tab.active span {
+  background-image: url(../img/user-primary.svg);
+}
+.account-sidebar #acc-collections-tab span {
+  background-image: url(../img/collections.svg);
+}
+.account-sidebar #acc-collections-tab:hover span, .account-sidebar #acc-collections-tab.active span {
+  background-image: url(../img/collections-primary.svg);
+}
+.account-sidebar #acc-discount-tab span {
+  background-image: url(../img/ticket-star.svg);
+}
+.account-sidebar #acc-discount-tab:hover span, .account-sidebar #acc-discount-tab.active span {
+  background-image: url(../img/ticket-star-primary.svg);
+}
+.account-sidebar #acc-strains-tab span {
+  background-image: url(../img/briefcase.svg);
+}
+.account-sidebar #acc-strains-tab:hover span, .account-sidebar #acc-strains-tab.active span {
+  background-image: url(../img/briefcase-primary.svg);
+}
 .account-main {
   min-height: 100vh;
 }
@@ -1178,9 +1212,11 @@ nav #cart-btn span {
 .user-settings {
   margin-top: 3rem;
   min-height: 100vh;
+  padding: 3rem;
   padding-bottom: 10rem;
-  padding: 1.5rem;
-  padding-bottom: 10rem;
+}
+.user-settings h1 {
+  font-size: 3.5rem;
 }
 @media only screen and (max-width: 767.98px) {
   .user-settings button {
@@ -1206,5 +1242,9 @@ nav #cart-btn span {
 }
 .user-settings-card-edit-icon img {
   margin: 0px;
+}
+.user-settings .view-order strong {
+  display: block;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

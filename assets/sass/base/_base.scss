@@ -137,6 +137,10 @@ body {
       border-radius: 50%;
     }
   }
+  .badge-pill {
+    font-weight: 600;
+    font-size: 100%;
+  }
   [class*="card"] {
     border-radius: 0.8rem;
     @include respond(md) {
