@@ -13,11 +13,51 @@
 }
 .account {
   min-height: 100vh;
+  .toggle-botton,
+  .cross-botton {
+    width: 30px;
+    z-index: 200;
+    display: none;
+  }
+  @include respond(md) {
+    .toggle-botton {
+      width: 30px;
+      display: block;
+      position: absolute;
+      left: 3rem;
+      top: 5rem;
+    }
+  }
   &-sidebar {
     background-color: $color-gray;
     min-height: 100vh;
+    position: relative;
+    transition: all 0.5s ease-in-out;
     @include respond(md) {
-      min-height: auto;
+      position: fixed;
+      min-height: 100vh;
+      z-index: 200;
+      width: 60vw;
+      transform: translateX(-100%);
+      &.show {
+        transform: translateX(0);
+      }
+      .cross-botton {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: $color-gray-1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 20px;
+        }
+      }
     }
     a {
       font-weight: 600;
@@ -225,8 +265,11 @@
     background-color: $color-black;
     display: flex;
     padding: 1rem;
-    min-width: 200px;
+    min-width: 300px;
     width: max-content;
+    @include respond(md) {
+      min-width: 200px;
+    }
     img {
       border-radius: 0.8rem;
       margin-right: 1.5rem;

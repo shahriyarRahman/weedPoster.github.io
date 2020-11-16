@@ -1,0 +1,25 @@
+.admin {
+  &-overview {
+    &-card {
+      display: flex;
+      flex-direction: inherit;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 1rem;
+      height: 100%;
+      @include respond(md) {
+        height: auto;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      span {
+        font-size: 1.6rem;
+      }
+      .icon {
+        padding: 2rem;
+        border-radius: 50% !important;
+      }
+    }
+  }
+}

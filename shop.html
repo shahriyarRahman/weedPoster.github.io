@@ -97,7 +97,7 @@
               </li>
               <li>
                 <input type="text" name="" id="slider-input-1" class="col-3" value="0">
-                <input type="text" name="" id="slider-input-2" class="col-3" value="100000">
+                <input type="text" name="" id="slider-input-2" class="col-3" value="500">
 
                 <button class="button button__primary--light txt-primary-solid" onclick="setRange()">Apply</button>
               </li>
@@ -282,19 +282,28 @@
   <script src="assets/js/jquery-ui.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    $("#slider-range").slider({
-      range: true,
-      min: 0,
-      max: 100000,
-      values: [0, 100000]
+    var range1 = $('#slider-input-1');
+    var range2 = $('#slider-input-2');
+    $(function () {
+      $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [0, 500],
+        slide: function (event, ui) {
+          range1.val(ui.values[0]);
+          range2.val(ui.values[1]);
+          $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        }
+      });
     });
     function setRange() {
 
-      var range1 = $('#slider-input-1').val();
-      var range2 = $('#slider-input-2').val();
-      $("#slider-range").slider("option", "values", [range1, range2]);
-      range1 = 0;
-      range2 = 0;
+      var range1Value = $('#slider-input-1').val();
+      var range2Value = $('#slider-input-2').val();
+      $("#slider-range").slider("option", "values", [range1Value, range2Value]);
+      range1Value = 0;
+      range2Value = 0;
     }
   </script>
 </body>

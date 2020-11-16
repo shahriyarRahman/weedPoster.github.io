@@ -31,12 +31,12 @@
               aria-controls="acc-refHistory" aria-selected="false">
               <span></span> Referrals
             </a>
-            <a class="active" id="acc-orderHistory-tab" data-toggle="pill" href="#acc-orderHistory" role="tab"
+            <a class="" id="acc-orderHistory-tab" data-toggle="pill" href="#acc-orderHistory" role="tab"
               aria-controls="acc-orderHistory" aria-selected="true">
               <span></span> Orders
             </a>
-            <a class="" id="acc-users-tab" data-toggle="pill" href="#acc-users" role="tab" aria-controls="acc-users"
-              aria-selected="false">
+            <a class="active" id="acc-users-tab" data-toggle="pill" href="#acc-users" role="tab"
+              aria-controls="acc-users" aria-selected="false">
               <span></span> Users
             </a>
             <a class="" id="acc-products-tab" data-toggle="pill" href="#acc-products" role="tab"
@@ -63,8 +63,9 @@
             </div>
             <div class="tab-pane fade" id="acc-refHistory" role="tabpanel" aria-labelledby="acc-refHistory-tab">
             </div>
-            <div class="tab-pane fade show active" id="acc-orderHistory" role="tabpanel"
-              aria-labelledby="acc-orderHistory-tab">
+            <div class="tab-pane fade" id="acc-orderHistory" role="tabpanel" aria-labelledby="acc-orderHistory-tab">
+            </div>
+            <div class="tab-pane fade show active" id="acc-users" role="tabpanel" aria-labelledby="acc-users-tab">
               <div class="container">
                 <div class="user-popup-card">
                   <img src="assets/img/user-img.png" alt="">
@@ -75,88 +76,56 @@
                 </div>
                 <div class="row align-items-start">
                   <div class="col-md-3 mb-5">
-                    <h1>Orders</h1>
+                    <h1>Settings</h1>
                   </div>
                   <div class="col-md-4">
                     <form action=""
                       class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
                       <label class="col-1"><img src="assets/img/search.svg" alt=""></label>
-                      <input class="col-10" type="text" placeholder="Search">
+                      <input class="col-10" type="text" placeholder="Search Product">
                     </form>
                   </div>
                   <div class="col-md-12">
                     <div class="br-1  background-gray no-gutters  row justify-content-between user-settings">
-                      <div class="col-12 no-gutters text-right txt-primary-solid">
-                        <h2><img src="assets/img/arrow-left-primary.svg" alt="">
-                          <span class="ml-3">
-                            Return to All Orders</span></h2>
-                        <hr class="sp">
+                      <div class="row col-12 no-gutters justify-content-between align-items-center">
+                        <div class="col-md-2 txt-primary-solid">
+                          <select name="" id="" class="txt-primary-solid">
+                            <option value="-1">User Actions</option>
+                            <option value="">User Actions</option>
+                            <option value="">User Actions</option>
+                            <option value="">User Actions</option>
+                          </select>
+                        </div>
+                        <div class="text-right txt-primary-solid mt-sm-4">
+                          <h2><img src="assets/img/arrow-left-primary.svg" alt="">
+                            <span class="ml-3">
+                              Return to All Orders</span></h2>
+                        </div>
+                        <hr class="sp col-12">
                       </div>
-                      <div class="col-12 mt-6 row justify-content-between view-order">
-                        <div class="col-md-6 px-5">
+                      <div class="col-12 mt-6 row justify-content-between no-gutters">
+                        <div class="col-md-5">
                           <div class="d-flex align-items-center">
-                            <h1 class="">#0001</h1>
+                            <h1 class="">John Doe</h1>
                             <span class="ml-5 badge badge-pill background-gold txt-gold">Awaiting Fullfillment</span>
                           </div>
                           <div class="mt-6">
-                            <div class="row align-items-center">
-                              <div class="col-md-2">
-                                <img src="assets/img/nug 1.svg" alt="" class="img-fluid">
-                              </div>
-                              <div class="col-md-5">
-                                <h4>Pink Star - 1 Gram</h4>
-                                <p>Poster Selection: Dark Blue Toad Poster</p>
-                              </div>
-                              <div class="col-md-2">
-                                <strong>$14.50</strong>
-                              </div>
-                              <div class="col-md-1">
-                                <strong>x2</strong>
-                              </div>
-                              <div class="col-md-2">
-                                <strong>$29.00</strong>
+                            <div class="d-flex  align-items-center mb-5 text-left">
+                              <img src="assets/img/user-img.png" alt="profile pic" class="br-1 thumbnail mr-5">
+                              <div class="">
+                                <h4>example@gmail.com</h4>
+                                <span class="text-muted txt-sm">Member since 03/11/2020</span>
                               </div>
                             </div>
-                            <hr>
-                            <div class="row justify-content-end text-right">
-                              <div class="col-5"></div>
-                              <div class="col">
-                                <strong>Items (3)</strong>
-                                <strong>Shipping Fees</strong>
-                                <strong>Tax (13%)</strong>
-                              </div>
-                              <div class="col-1"></div>
-                              <div class="col-2">
-                                <strong>$43.50</strong>
-                                <strong>$5.99</strong>
-                                <strong>$5.39</strong>
-                              </div>
+                            <div class="card user-settings-card p-4">
+                              <h2>Verification</h2>
+                              <button type="submit" class="button button__primary button-block mb-2 mt-3">View
+                                Documents</button>
                             </div>
-                            <hr>
-                            <div class="row justify-content-end text-right">
 
-                              <div class="col-5"></div>
-                              <div class="col">
-                                <strong>Total</strong>
-                              </div>
-                              <div class="col-1"></div>
-                              <div class="col-2">
-                                <strong>$54.88</strong>
-                              </div>
-                            </div>
                           </div>
                         </div>
                         <div class="col-md-5">
-                          <div class="mb-5 d-flex align-items-center">
-                            <img src="assets/img/user-img.png" alt="profile pic" class="br-1 thumbnail mr-md-5">
-                            <div class="">
-                              <h3>John Doe</h3>
-                              <p>example@gmail.com</p>
-                              <h3 class="txt-primary-solid mt-5"><span class="mr-3">View Profile</span> <img
-                                  src="assets/img/arrow-right-primary.svg" alt=""></h3>
-                            </div>
-                          </div>
-
                           <div class="card user-settings-card p-4">
                             <div class="user-settings-card-edit-icon">
                               <img src="assets/img/pencil.svg" alt="">
@@ -185,8 +154,6 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="acc-users" role="tabpanel" aria-labelledby="acc-users-tab">
-            </div>
             <div class="tab-pane fade" id="acc-products" role="tabpanel" aria-labelledby="acc-products-tab">
             </div>
             <div class="tab-pane fade" id="acc-collections" role="tabpanel" aria-labelledby="acc-collections-tab">
@@ -207,8 +174,64 @@
   <script src="assets/js/jquery-3.5.1.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/chart.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    var ctx = document.getElementById('adminChart-2').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      responsive: true,
+      data: {
+        labels: ['1', '2', '3', '4', '5', '6'],
+        datasets: [{
+          label: '',
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+    //bulk action checkbox drop down
+    var expanded = false;
 
+    function showCheckboxes() {
+      var checkboxes = document.getElementById("checkboxes");
+      var checkboxes2 = document.getElementById("checkboxes2");
+      if (!expanded) {
+        checkboxes.style.display = "block";
+        checkboxes2.style.display = "block";
+        expanded = true;
+      } else {
+        checkboxes.style.display = "none";
+        checkboxes2.style.display = "none";
+        expanded = false;
+      }
+    }
+  </script>
 </body>
 
 </html>

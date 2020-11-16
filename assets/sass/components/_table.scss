@@ -3,7 +3,8 @@
     background-color: $color-gray;
     font-weight: 600;
     border-top: 1rem solid $color-white;
-    &:hover {
+    &:hover,
+    &.active {
       background-color: $color-primary-light-1;
     }
     .badge {
@@ -14,10 +15,12 @@
     th {
       border-top: none;
       &:first-child {
+        padding-left: 2rem;
         border-top-left-radius: 1.5rem;
         border-bottom-left-radius: 1.5rem;
       }
       &:last-child {
+        padding-right: 2rem;
         border-top-right-radius: 1.5rem;
         border-bottom-right-radius: 1.5rem;
       }

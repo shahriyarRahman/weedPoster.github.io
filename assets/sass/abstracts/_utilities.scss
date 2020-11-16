@@ -93,9 +93,13 @@
 .br-1 {
   border-radius: 0.8rem !important;
 }
+.txt-sm {
+  font-size: 75%;
+}
 .thumbnail {
-  width: 140px;
+  width: 110px;
   @include respond(md) {
+    width: 140px;
     display: block;
     margin: auto;
   }
