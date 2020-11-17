@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
   <script src="https://kit.fontawesome.com/31eba78f92.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
   <title>Weed Poster</title>
 </head>
 
@@ -18,9 +18,15 @@
   <main class="account">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
+        <label class="toggle-botton mt-3" for="toggler">
+          <img src="../assets/img/menu-toggle.svg" alt="" class="img-fluid" />
+        </label>
         <div class="col-md-2 account-sidebar">
+          <label class="cross-botton" for="toggler">
+            <img src="../assets/img/cancel.svg" alt="" class="img-fluid" />
+          </label>
           <div class="text-center mt-4 mb-5">
-            <img src="assets/img/logo.svg" alt="">
+            <img src="../assets/img/logo.svg" alt="">
           </div>
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="" id="acc-overview-tab" data-toggle="pill" href="#acc-overview" role="tab"
@@ -68,7 +74,7 @@
             <div class="tab-pane fade show active" id="acc-users" role="tabpanel" aria-labelledby="acc-users-tab">
               <div class="container">
                 <div class="user-popup-card">
-                  <img src="assets/img/user-img.png" alt="">
+                  <img src="../assets/img/user-img.png" alt="">
                   <div class="">
                     <p>Welcome, user@gmail.com</p>
                     <span class="txt-primary-solid">logout</span>
@@ -81,7 +87,7 @@
                   <div class="col-md-4">
                     <form action=""
                       class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
-                      <label class="col-1"><img src="assets/img/search.svg" alt=""></label>
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
                       <input class="col-10" type="text" placeholder="Search Product">
                     </form>
                   </div>
@@ -97,7 +103,7 @@
                           </select>
                         </div>
                         <div class="text-right txt-primary-solid mt-sm-4">
-                          <h2><img src="assets/img/arrow-left-primary.svg" alt="">
+                          <h2><img src="../assets/img/arrow-left-primary.svg" alt="">
                             <span class="ml-3">
                               Return to All Orders</span></h2>
                         </div>
@@ -105,22 +111,25 @@
                       </div>
                       <div class="col-12 mt-6 row justify-content-between no-gutters">
                         <div class="col-md-5">
-                          <div class="d-flex align-items-center">
-                            <h1 class="">John Doe</h1>
-                            <span class="ml-5 badge badge-pill background-gold txt-gold">Awaiting Fullfillment</span>
-                          </div>
+                          <h1 class="">John Doe</h1>
                           <div class="mt-6">
                             <div class="d-flex  align-items-center mb-5 text-left">
-                              <img src="assets/img/user-img.png" alt="profile pic" class="br-1 thumbnail mr-5">
+                              <img src="../assets/img/user-img.png" alt="profile pic" class="br-1 thumbnail mr-5">
                               <div class="">
                                 <h4>example@gmail.com</h4>
                                 <span class="text-muted txt-sm">Member since 03/11/2020</span>
                               </div>
                             </div>
                             <div class="card user-settings-card p-4">
-                              <h2>Verification</h2>
-                              <button type="submit" class="button button__primary button-block mb-2 mt-3">View
-                                Documents</button>
+                              <h2>Referrals</h2>
+                              <h1 class="m-0">23 Referrals</h1>
+                              <p class="text-muted">102 Points Collected</p>
+                              <form class="form-inline">
+                                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                                <input type="text" class="background-gray mb-2 mr-sm-2 w-75" id="inlineFormInputName2"
+                                  placeholder="Add Points">
+                                <button type="submit" class="button button__primary mb-2">Add</button>
+                              </form>
                             </div>
 
                           </div>
@@ -128,24 +137,26 @@
                         <div class="col-md-5">
                           <div class="card user-settings-card p-4">
                             <div class="user-settings-card-edit-icon">
-                              <img src="assets/img/pencil.svg" alt="">
+                              <img src="../assets/img/pencil.svg" alt="">
                             </div>
                             <h3>shipping information</h3>
-                            <p class="mt-5"><img src="assets/img/user-simple.svg" alt=""> John Doe</p>
-                            <p class="mt-3"><img src="assets/img/globe-primary.svg" alt=""> 1234 Main Street San Jose,
+                            <p class="mt-5"><img src="../assets/img/user-simple.svg" alt=""> John Doe</p>
+                            <p class="mt-3"><img src="../assets/img/globe-primary.svg" alt=""> 1234 Main Street San
+                              Jose,
                               CA 91412</p>
-                            <p class="mt-3"><img src="assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
+                            <p class="mt-3"><img src="../assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
 
                           </div>
                           <div class="card user-settings-card p-4 mt-5">
                             <div class="user-settings-card-edit-icon">
-                              <img src="assets/img/pencil.svg" alt="">
+                              <img src="../assets/img/pencil.svg" alt="">
                             </div>
                             <h3>Billing Information</h3>
-                            <p class="mt-5"><img src="assets/img/user-simple.svg" alt=""> John Doe</p>
-                            <p class="mt-3"><img src="assets/img/globe-primary.svg" alt=""> 1234 Main Street San Jose,
+                            <p class="mt-5"><img src="../assets/img/user-simple.svg" alt=""> John Doe</p>
+                            <p class="mt-3"><img src="../assets/img/globe-primary.svg" alt=""> 1234 Main Street San
+                              Jose,
                               CA 91412</p>
-                            <p class="mt-3"><img src="assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
+                            <p class="mt-3"><img src="../assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
                           </div>
                         </div>
                       </div>
@@ -169,13 +180,13 @@
   </main>
   <div class="chat-message">
     <span>5</span>
-    <img src="assets/img/message.svg" alt="">
+    <img src="../assets/img/message.svg" alt="">
   </div>
-  <script src="assets/js/jquery-3.5.1.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/chart.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="../assets/js/jquery-3.5.1.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/chart.js"></script>
+  <script src="../assets/js/main.js"></script>
   <script>
     var ctx = document.getElementById('adminChart-2').getContext('2d');
     var myChart = new Chart(ctx, {

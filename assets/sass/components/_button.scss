@@ -50,6 +50,16 @@
         background-color: $color-primary;
       }
     }
+    &-danger {
+      border: 1px solid $color-red;
+      color: $color-red;
+      background-color: transparent;
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: $color-red;
+      }
+    }
   }
   &__dark,
   &__dark:hover {
@@ -59,5 +69,9 @@
   &__gradient {
     background: linear-gradient(270deg, #dc5ed7 0%, #ffa7fc 100%);
     color: $color-white;
+  }
+  &__danger {
+    background-color: $color-red-light;
+    color: $color-red;
   }
 }

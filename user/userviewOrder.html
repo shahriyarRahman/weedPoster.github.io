@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
   <script src="https://kit.fontawesome.com/31eba78f92.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
   <title>Weed Poster</title>
 </head>
 
@@ -18,9 +18,15 @@
   <main class="account">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
+        <label class="toggle-botton mt-3" for="toggler">
+          <img src="../assets/img/menu-toggle.svg" alt="" class="img-fluid" />
+        </label>
         <div class="col-md-2 account-sidebar">
+          <label class="cross-botton" for="toggler">
+            <img src="../assets/img/cancel.svg" alt="" class="img-fluid" />
+          </label>
           <div class="text-center mt-4 mb-5">
-            <img src="assets/img/logo.svg" alt="">
+            <img src="../assets/img/logo.svg" alt="">
           </div>
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="" id="acc-overview-tab" data-toggle="pill" href="#acc-overview" role="tab"
@@ -29,31 +35,16 @@
             </a>
             <a class="" id="acc-refHistory-tab" data-toggle="pill" href="#acc-refHistory" role="tab"
               aria-controls="acc-refHistory" aria-selected="false">
-              <span></span> Referrals
+              <span></span> Referral History
             </a>
             <a class="active" id="acc-orderHistory-tab" data-toggle="pill" href="#acc-orderHistory" role="tab"
               aria-controls="acc-orderHistory" aria-selected="true">
-              <span></span> Orders
+              <span></span> Order History
             </a>
-            <a class="" id="acc-users-tab" data-toggle="pill" href="#acc-users" role="tab" aria-controls="acc-users"
-              aria-selected="false">
-              <span></span> Users
-            </a>
-            <a class="" id="acc-products-tab" data-toggle="pill" href="#acc-products" role="tab"
-              aria-controls="acc-products" aria-selected="false">
-              <span></span> Products
-            </a>
-            <a class="" id="acc-collections-tab" data-toggle="pill" href="#acc-collections" role="tab"
-              aria-controls="acc-collections" aria-selected="false">
-              <span></span> Collections
-            </a>
-            <a class="" id="acc-discount-tab" data-toggle="pill" href="#acc-discount" role="tab"
-              aria-controls="acc-discount" aria-selected="false">
-              <span></span> Discount
-            </a>
-            <a class="" id="acc-strains-tab" data-toggle="pill" href="#acc-strains" role="tab"
-              aria-controls="acc-strains" aria-selected="false">
-              <span></span> Strains
+            <hr>
+            <a class="" id="acc-settings-tab" data-toggle="pill" href="#acc-settings" role="tab"
+              aria-controls="acc-settings" aria-selected="false">
+              <span></span> Account Settings
             </a>
           </div>
         </div>
@@ -67,7 +58,7 @@
               aria-labelledby="acc-orderHistory-tab">
               <div class="container">
                 <div class="user-popup-card">
-                  <img src="assets/img/user-img.png" alt="">
+                  <img src="../assets/img/user-img.png" alt="">
                   <div class="">
                     <p>Welcome, user@gmail.com</p>
                     <span class="txt-primary-solid">logout</span>
@@ -80,14 +71,14 @@
                   <div class="col-md-4">
                     <form action=""
                       class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
-                      <label class="col-1"><img src="assets/img/search.svg" alt=""></label>
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
                       <input class="col-10" type="text" placeholder="Search">
                     </form>
                   </div>
                   <div class="col-md-12">
                     <div class="br-1  background-gray no-gutters  row justify-content-between user-settings">
                       <div class="col-12 no-gutters text-right txt-primary-solid">
-                        <h2><img src="assets/img/arrow-left-primary.svg" alt="">
+                        <h2><img src="../assets/img/arrow-left-primary.svg" alt="">
                           <span class="ml-3">
                             Return to All Orders</span></h2>
                         <hr class="sp">
@@ -101,7 +92,7 @@
                           <div class="mt-6">
                             <div class="row align-items-center">
                               <div class="col-md-2">
-                                <img src="assets/img/nug 1.svg" alt="" class="img-fluid">
+                                <img src="../assets/img/nug 1.svg" alt="" class="img-fluid">
                               </div>
                               <div class="col-md-5">
                                 <h4>Pink Star - 1 Gram</h4>
@@ -148,35 +139,37 @@
                         </div>
                         <div class="col-md-5">
                           <div class="mb-5 d-flex align-items-center">
-                            <img src="assets/img/user-img.png" alt="profile pic" class="br-1 thumbnail mr-md-5">
+                            <img src="../assets/img/user-img.png" alt="profile pic" class="br-1 thumbnail mr-md-5">
                             <div class="">
                               <h3>John Doe</h3>
                               <p>example@gmail.com</p>
                               <h3 class="txt-primary-solid mt-5"><span class="mr-3">View Profile</span> <img
-                                  src="assets/img/arrow-right-primary.svg" alt=""></h3>
+                                  src="../assets/img/arrow-right-primary.svg" alt=""></h3>
                             </div>
                           </div>
 
                           <div class="card user-settings-card p-4">
                             <div class="user-settings-card-edit-icon">
-                              <img src="assets/img/pencil.svg" alt="">
+                              <img src="../assets/img/pencil.svg" alt="">
                             </div>
                             <h3>shipping information</h3>
-                            <p class="mt-5"><img src="assets/img/user-simple.svg" alt=""> John Doe</p>
-                            <p class="mt-3"><img src="assets/img/globe-primary.svg" alt=""> 1234 Main Street San Jose,
+                            <p class="mt-5"><img src="../assets/img/user-simple.svg" alt=""> John Doe</p>
+                            <p class="mt-3"><img src="../assets/img/globe-primary.svg" alt=""> 1234 Main Street San
+                              Jose,
                               CA 91412</p>
-                            <p class="mt-3"><img src="assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
+                            <p class="mt-3"><img src="../assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
 
                           </div>
                           <div class="card user-settings-card p-4 mt-5">
                             <div class="user-settings-card-edit-icon">
-                              <img src="assets/img/pencil.svg" alt="">
+                              <img src="../assets/img/pencil.svg" alt="">
                             </div>
                             <h3>Billing Information</h3>
-                            <p class="mt-5"><img src="assets/img/user-simple.svg" alt=""> John Doe</p>
-                            <p class="mt-3"><img src="assets/img/globe-primary.svg" alt=""> 1234 Main Street San Jose,
+                            <p class="mt-5"><img src="../assets/img/user-simple.svg" alt=""> John Doe</p>
+                            <p class="mt-3"><img src="../assets/img/globe-primary.svg" alt=""> 1234 Main Street San
+                              Jose,
                               CA 91412</p>
-                            <p class="mt-3"><img src="assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
+                            <p class="mt-3"><img src="../assets/img/Phone-primary.svg" alt=""> 123-456-7890</p>
                           </div>
                         </div>
                       </div>
@@ -202,12 +195,12 @@
   </main>
   <div class="chat-message">
     <span>5</span>
-    <img src="assets/img/message.svg" alt="">
+    <img src="../assets/img/message.svg" alt="">
   </div>
-  <script src="assets/js/jquery-3.5.1.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="../assets/js/jquery-3.5.1.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/main.js"></script>
 
 </body>
 

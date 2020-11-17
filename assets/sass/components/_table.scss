@@ -14,6 +14,7 @@
     td,
     th {
       border-top: none;
+      vertical-align: middle;
       &:first-child {
         padding-left: 2rem;
         border-top-left-radius: 1.5rem;
@@ -78,6 +79,13 @@
         &:hover {
           background-color: $color-gray;
         }
+      }
+    }
+  }
+  &#collections {
+    tr {
+      td {
+        padding: 1.5rem 0;
       }
     }
   }

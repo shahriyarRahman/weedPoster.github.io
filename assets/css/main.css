@@ -139,6 +139,14 @@
   }
 }
 
+.h-100vh {
+  min-height: 100vh !important;
+}
+
+.thumbnail-sm {
+  width: 70px;
+}
+
 @font-face {
   font-family: "Herman";
   src: url("../fonts/HurmeGeometricSans3 Light.otf");
@@ -362,6 +370,15 @@ body [class*=card] {
   color: #fff;
   background-color: #dc5ed7;
 }
+.button__outline-danger {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  background-color: transparent;
+}
+.button__outline-danger:hover, .button__outline-danger:active {
+  color: #fff;
+  background-color: #ff0000;
+}
 .button__dark, .button__dark:hover {
   background-color: #000;
   color: #fff;
@@ -369,6 +386,10 @@ body [class*=card] {
 .button__gradient {
   background: linear-gradient(270deg, #dc5ed7 0%, #ffa7fc 100%);
   color: #fff;
+}
+.button__danger {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ff0000;
 }
 
 .feature-card {
@@ -475,6 +496,7 @@ body [class*=card] {
 .table tr td,
 .table tr th {
   border-top: none;
+  vertical-align: middle;
 }
 .table tr td:first-child,
 .table tr th:first-child {
@@ -542,6 +564,9 @@ body [class*=card] {
 }
 .table-reversed thead tr:hover {
   background-color: #f9f9f9;
+}
+.table#collections tr td {
+  padding: 1.5rem 0;
 }
 
 .checkbox-container {
@@ -643,8 +668,7 @@ body [class*=card] {
   bottom: 0;
 }
 
-#checkboxes,
-#checkboxes2 {
+.checkboxes {
   display: none;
   position: absolute;
   z-index: 100;
@@ -653,8 +677,7 @@ body [class*=card] {
   border: 1px #dadada solid;
 }
 
-#checkboxes label,
-#checkboxes2 label {
+.checkboxes label {
   display: block;
 }
 
@@ -1143,7 +1166,7 @@ nav #cart-btn span {
     display: block;
     position: absolute;
     left: 3rem;
-    top: 5rem;
+    top: 4rem;
   }
 }
 .account-sidebar {
@@ -1209,10 +1232,10 @@ nav #cart-btn span {
   background-image: url(../img/Category-primary.svg);
 }
 .account-sidebar #acc-verification-tab span {
-  background-image: url(../img/verification.svg);
+  background-image: url(../img/order.svg);
 }
 .account-sidebar #acc-verification-tab:hover span, .account-sidebar #acc-verification-tab.active span {
-  background-image: url(../img/verification-primary.svg);
+  background-image: url(../img/order-primary.svg);
 }
 .account-sidebar #acc-billing-tab span {
   background-image: url(../img/wallet.svg);
@@ -1284,7 +1307,7 @@ nav #cart-btn span {
 }
 @media only screen and (max-width: 767.98px) {
   .account-main .tab-pane {
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 4rem 2rem;
     margin-left: 0rem;
     font-size: 1.4rem;
@@ -1395,13 +1418,16 @@ nav #cart-btn span {
   padding: 3rem;
   padding-bottom: 10rem;
 }
-.user-settings h1 {
-  font-size: 3.5rem;
-}
 @media only screen and (max-width: 767.98px) {
+  .user-settings {
+    padding: 2rem;
+  }
   .user-settings button {
     margin-top: 2rem;
   }
+}
+.user-settings h1 {
+  font-size: 3.5rem;
 }
 .user-settings-card {
   position: relative;
@@ -1450,5 +1476,10 @@ nav #cart-btn span {
 .admin-overview-card .icon {
   padding: 2rem;
   border-radius: 50% !important;
+}
+
+#adminPendingUser .modal-dialog .modal-content {
+  padding: 1rem;
+  min-width: 40rem;
 }
 /*# sourceMappingURL=main.css.map */

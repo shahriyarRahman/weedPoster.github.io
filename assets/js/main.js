@@ -12,12 +12,13 @@ $(document).ready(function () {
     $('.account .cross-botton').on('click', () => {
         $(".account-sidebar").removeClass("show");
     })
-    $("td .checkbox-container input[type='checkbox']").on('click', (e) => {
-        selectCheckBox();
-    })
-    var checboxes = $("td .checkbox-container input[type='checkbox']");
-    $("#selectAll input[type='checkbox']").on('click', (e) => {
+    var checboxes;
 
+    $("td .checkbox-container input[type='checkbox']").on('click', (e) => {
+        $(e.target).parents('tr').toggleClass('active')
+    })
+    $("#selectAll input[type='checkbox']").on('click', (e) => {
+        checboxes = $(e.target).parents('table').find("td .checkbox-container input[type='checkbox']");
         $("#deSelectAll input[type='checkbox']").prop("checked", false);
         if ($("#selectAll input[type='checkbox']:checked").length > 0) {
             checboxes.prop("checked", true);
@@ -25,17 +26,33 @@ $(document).ready(function () {
         else if ($("#selectAll input[type='checkbox']:not(:checked)").length > 0) {
             checboxes.prop("checked", false);
         }
-        selectCheckBox();
+        if (checboxes.prop("checked") == true) {
+            checboxes.parents('tr').addClass("active");
+        } else if (checboxes.prop("checked") == false) {
+            checboxes.parents('tr').removeClass("active");
+        }
     });
     $("#deSelectAll input[type='checkbox']").on('click', (e) => {
         $("#selectAll input[type='checkbox']").prop("checked", false);
+        checboxes = $(e.target).parents('table').find("td .checkbox-container input[type='checkbox']");
         checboxes.prop("checked", false);
-        selectCheckBox();
+        if (checboxes.prop("checked") == true) {
+            checboxes.parents('tr').addClass("active");
+        } else if (checboxes.prop("checked") == false) {
+            checboxes.parents('tr').removeClass("active");
+        }
     });
-    function selectCheckBox() {
-        $("td .checkbox-container input[type='checkbox']:checked").parent().parent().parent().addClass("active");
-        $("td .checkbox-container input[type='checkbox']:not(:checked)").parent().parent().parent().removeClass("active");
-
-    }
-
 });
+//bulk action checkbox drop down
+var expanded = false;
+
+function showCheckboxes(index) {
+    checkboxes = document.querySelectorAll(".checkboxes");
+    if (!expanded) {
+        checkboxes[index].style.display = "block";
+        expanded = true;
+    } else {
+        checkboxes[index].style.display = "none";
+        expanded = false;
+    }
+}
